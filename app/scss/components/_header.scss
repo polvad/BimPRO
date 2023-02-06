@@ -1,8 +1,9 @@
 .header {
-
-    border-bottom: 1px solid #E3E2E2;
+    background-color: $primery-bg;
+    border-bottom: 1px solid $gray-100;
 
     &__inner {
+        position: relative;
         display: flex;
         align-items: center;
         padding: 16px 0;
@@ -15,6 +16,11 @@
 
     &__logo {
         object-fit: cover;
+        transition: opacity 0.5s;
+
+        &:hover {
+            opacity: 0.8;
+        }
     }
 
     &__list {
@@ -23,9 +29,12 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 35px;
+
     }
 
-    &__item {}
+    &__item {
+        position: relative;
+    }
 
     &__link {
         position: relative;
@@ -35,14 +44,6 @@
             opacity: 1;
         }
 
-        &:focus {
-            color: #E74214;
-        }
-
-        &:active {
-            opacity: 0.8;
-        }
-
         &::after {
             content: '';
             position: absolute;
@@ -50,18 +51,57 @@
             left: 0;
             width: 0;
             height: 1px;
-            background-color: #E74214;
+            background-color: $accent;
             opacity: 0;
             transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
         }
     }
 
 
+    &__sub-list {
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+        transform: translateY(100%);
+        width: 480px;
+        border: 1px solid $gray-100;
+        background-color: $primery-bg;
+        transition: height 1.3s steps(6), opacity 0.8s ease;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    &__sub-item {
+        border-bottom: 1px solid $gray-100;
+
+    }
+
+    &__sub-link {
+        padding: 18px 45px;
+    }
+
     &__contacts {
         font-weight: 500;
         letter-spacing: 1px;
-        color: #fff;
+        color: $white;
         margin-left: auto;
     }
 
+    &__advice {
+        position: absolute;
+        bottom: 0;
+        right: -7px;
+        transform: translateY(100%);
+        transition: transform 0.6s ease, bottom 0.6s ease;
+        z-index: 3;
+
+        &.orientation {
+            position: fixed;
+            bottom: 50%;
+            right: -105px;
+            transform: rotate(90deg);
+        }
+
+    }
 }

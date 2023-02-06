@@ -8,6 +8,7 @@
     <title>Главная - BIMPRO</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik:regular,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -19,30 +20,124 @@
                 <img class="logo__img" src="./images/icons/logo.svg" width="186" height="47" alt="Логотип BIMPRO">
             </a>
             <ul class="header__list">
-                <li class="header__item"><a class="header__link" href="#">Услуги</a></li>
-                <li class="header__item"><a class="header__link" href="#">Преимущества</a></li>
-                <li class="header__item"><a class="header__link" href="#">Проекты</a></li>
-                <li class="header__item"><a class="header__link" href="#">Команда</a></li>
-                <li class="header__item"><a class="header__link" href="#">Гарантии</a></li>
-                <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
+                <li class="header__item">
+                    <a class="header__link text-link" href="#">Услуги</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link text-link" href="#">Преимущества</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link text-link" href="#">Проекты</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link text-link" href="#">Команда</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link text-link" href="#">Гарантии</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link text-link" href="#">Контакты</a>
+                </li>
             </ul>
             <div class="header__contacts">
-                <a class="header__number" href="tel:+78123301040">+7 812 330 10 40</a>
-                <a class="header__email" href="mailto:project@bimpro.ru">project@bimpro.ru</a>
+                <a class="header__number text-link" href="tel:+78123301040">+7 812 330 10 40</a>
+                <a class="header__email text-link" href="mailto:project@bimpro.ru">project@bimpro.ru</a>
             </div>
+            <ul class="header__sub-list">
+                <li class="header__sub-item">
+                    <a class="header__sub-link text-link" href="#">Визуализация комплексной застройки</a>
+                </li>
+                <li class="header__sub-item">
+                    <a class="header__sub-link text-link" href="#">Архитектурная визуализация</a>
+                </li>
+                <li class="header__sub-item">
+                    <a class="header__sub-link text-link" href="#">Интерьерная визуализация</a>
+                </li>
+                <li class="header__sub-item">
+                    <a class="header__sub-link text-link" href="#"> Предметная и рекламнаявизуализация </a>
+                </li>
+                <li class="header__sub-item">
+                    <a class="header__sub-link text-link" href="#">3D, VR и видео материалы</a>
+                </li>
+                <li class="header__sub-item">
+                    <a class="header__sub-link text-link" href="#">Дополнительные материалы</a>
+                </li>
+            </ul>
+            <button class="header__advice advice" type="button">Бесплатная консультация</button>
         </div>
-
     </div>
 </header>
 
     <main class="main">
 
-        
+        <section class="hero">
+    <div class="container">
+        <div class="hero__inner">
+            <div class="hero__content">
+                <h1 class="hero__title">Визуализация любой сложности</h1>
+                <p class="hero__text">
+                    Создадим 3D Визуализации, презентационные интерактивные и VR-материалы, анимации, жилой и
+                    коммерческой недвижимости.
+                </p>
+                <button class="hero__link btn-large" type="button">
+                    Рассчитать стоимость проекта
+                </button>
+            </div>
+            <div class="hero__slider slider-servise">
+                <ul class="slider-servise__list">
+                    <li class="slider-servise__item">
+                        <img class="slider-servise__img" src="./images/services/residential-complexes.jpg" width="870"
+                            height="517" alt="жилые комплексы">
+                        <span class="slider-servise__heading">
+                            жилые комплексы
+                        </span>
+                    </li>
+                    <li class="slider-servise__item">
+                        <img class="slider-servise__img" src="./images/services/architecture.jpg" width="870"
+                            height="517" alt="жилые комплексы">
+                        <span class="slider-servise__heading">
+                            архитектура
+                        </span>
+                    </li>
+                    <li class="slider-servise__item">
+                        <img class="slider-servise__img" src="./images/services/interior.jpg" width="870" height="517"
+                            alt="жилые комплексы">
+                        <span class="slider-servise__heading">
+                            интерьеры
+                        </span>
+                    </li>
+                    <li class="slider-servise__item">
+                        <img class="slider-servise__img" src="./images/services/visualization.jpg" width="870"
+                            height="517" alt="жилые комплексы">
+                        <span class="slider-servise__heading">
+                            рекламная визуализация
+                        </span>
+                    </li>
+                    <li class="slider-servise__item">
+                        <img class="slider-servise__img" src="./images/services/3d-materials.jpg" width="870"
+                            height="517" alt="жилые комплексы">
+                        <span class="slider-servise__heading">
+                            3D и VR материалы
+                        </span>
+                    </li>
+                </ul>
+                <div class="slider-servise__navigation">
+                    <div class="slider-servise__dots"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
     </main>
 
     
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/main.js"></script>
+
 
 </body>
 
